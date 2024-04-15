@@ -1,0 +1,5 @@
+EXISTS与IN的使用效率的问题，通常情况下采用exists要比in效率高，因为IN不走索引，但要看实际情况具体使用：
+
+IN适合于外表大而内表小的情况；EXISTS适合于外表小而内表大的情况。
+
+NOT EXISTS 的作用与 EXISTS 正好相反。如果子查询没有返回行，则满足了 NOT EXISTS 中的 WHERE 子句
